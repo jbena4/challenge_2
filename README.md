@@ -2,34 +2,48 @@
 Loan Application
 # Project Title
 
-Just after the title, introduce your project by describing attractively what the project is about and what is the main problem that inspires you to create this project or what is the main contribution for the potential user of your project.
+This project uses a command line interface where applicants input financial information and recieve a list of qualifying loans as a .csv file. 
 
 ---
 
 ## Technologies
 
-Describe the technologies required to use your project such as programming languages, libraries, frameworks, and operating systems. Be sure to include the specific versions of any critical dependencies that you have used in the stable version of your project.
+The project is written in python 3.9 and uses the sys, csv, fire, questionary and pathlib libraries.
 
 ---
 
 ## Installation Guide
 
-In this section, you should include detailed installation notes containing code blocks and screenshots.
+Users may run the program in an IDE of their choice. 
 
 ---
 
 ## Usage
 
-This section should include screenshots, code blocks, or animations explaining how to use your project.
+Running the program returns a CLI where users input financial data. The application terminates if users are unwilling to save the data or do not qualify for any loans. CSV file is saved in user-provided location under the name "qualifying_loans.csv"
 
+     # ask applicant if they would like to save loan
+    loan_save_question = questionary.confirm("Would you like to save your qualifying loans?").ask()
+
+    # if answer is no, exit program
+    if loan_save_question == False:  
+        sys.exit("OK, thanks for your time")
+
+    # if applicant doesn't qualify, terminate program
+    elif qualifying_loans==[]:
+        sys.exit("Sorry you don't qualify for any loans")
+        
+    # ask applicant for file location and add "qualifying_loans.csv" to path
+    loan_location = questionary.text("Where would you like the file saved?").ask()+"qualifying_loans.csv"
+    loan_save_path= Path(loan_location)    
 ---
 
 ## Contributors
 
-In this section, list all the people who contribute to this project. You might want recruiters or potential collaborators to reach you, so include your contact email and, optionally, your LinkedIn or Twitter profile.
+The project was completed by jbena4 under the direction of instructors with the Columbia Engineering certificate program.
 
 ---
 
 ## License
 
-When you share a project on a repository, especially a public one, it's important to choose the right license to specify what others can and can't with your source code and files. Use this section to include the license you want to use.
+This project is free to distribute and licensed under MIT.
