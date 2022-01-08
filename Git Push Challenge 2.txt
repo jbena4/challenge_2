@@ -1,0 +1,48 @@
+james@LAPTOP-7S4J8O76 MINGW64 ~/onedrive/desktop/starter_code/loan_qualifier_app (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/james/OneDrive/Desktop/Starter_Code/loan_qualifier_app/.git/
+(base)
+james@LAPTOP-7S4J8O76 MINGW64 ~/onedrive/desktop/starter_code/loan_qualifier_app (master)
+$ git add .
+(base)
+james@LAPTOP-7S4J8O76 MINGW64 ~/onedrive/desktop/starter_code/loan_qualifier_app (master)
+$ git commit -m 'first commit'
+[master (root-commit) afa3285] first commit
+ 16 files changed, 405 insertions(+)
+ create mode 100644 README.md
+ create mode 100644 app.py
+ create mode 100644 data/approved_loans.csv
+ create mode 100644 data/daily_rate_sheet.csv
+ create mode 100644 qualifier/filters/__pycache__/credit_score.cpython-39.pyc
+ create mode 100644 qualifier/filters/__pycache__/debt_to_income.cpython-39.pyc
+ create mode 100644 qualifier/filters/__pycache__/loan_to_value.cpython-39.pyc
+ create mode 100644 qualifier/filters/__pycache__/max_loan_size.cpython-39.pyc
+ create mode 100644 qualifier/filters/credit_score.py
+ create mode 100644 qualifier/filters/debt_to_income.py
+ create mode 100644 qualifier/filters/loan_to_value.py
+ create mode 100644 qualifier/filters/max_loan_size.py
+ create mode 100644 qualifier/utils/__pycache__/calculators.cpython-39.pyc
+ create mode 100644 qualifier/utils/__pycache__/fileio.cpython-39.pyc
+ create mode 100644 qualifier/utils/calculators.py
+ create mode 100644 qualifier/utils/fileio.py
+(base)
+james@LAPTOP-7S4J8O76 MINGW64 ~/onedrive/desktop/starter_code/loan_qualifier_app (master)
+$ git push -u origin master
+Enter passphrase for key '/c/Users/james/.ssh/id_rsa':
+Enumerating objects: 24, done.
+Counting objects: 100% (24/24), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (24/24), done.
+Writing objects: 100% (24/24), 8.47 KiB | 1.21 MiB/s, done.
+Total 24 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/jbena4/challenge_2/pull/new/master
+remote:
+To github.com:jbena4/challenge_2.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+(base)
+james@LAPTOP-7S4J8O76 MINGW64 ~/onedrive/desktop/starter_code/loan_qualifier_app (master)
+$
