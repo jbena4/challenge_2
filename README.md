@@ -1,6 +1,6 @@
 # challenge_2
-Loan Application
-# Project Title
+
+# Loan Application
 
 This project uses a command line interface where applicants input financial information and recieve a list of qualifying loans as a .csv file. 
 
